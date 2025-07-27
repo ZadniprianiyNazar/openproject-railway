@@ -9,5 +9,4 @@ ENV OPENPROJECT_PORT=8080
 ENV OPENPROJECT_SMTP__ENABLED=false
 
 EXPOSE 8080
-
-CMD ["/app/docker/prod/start"]
+# НЕ переписуємо CMD чи ENTRYPOINT, щоб не зламати старт контейнера
